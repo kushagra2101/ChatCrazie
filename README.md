@@ -12,7 +12,7 @@ Main problem domain is building a Chatbot, which is capable of generating the be
 3.Able to ask follow-up questions, and <br>
 4.Able to continue the conversation in a realistic manner. <br>In order to achieve this goal, The Chatbot needs to have understanding of the sender’s messages so that it can predict which sort of response will be relevant and it must be correct lexically and grammatically while generating the reply.<br>
 
-# -METHODOLY
+# -METHODOLOGY
 ➢ DATA SET ACQUISITION: It is the one of the most important step in designing a chatbot. After lots of research and fine tuning experimentation, we have used gunthercox dataset and also modified it. The dataset contains conversations based on various topics such as emotions, psychology, sports, normal day-to-day conversations etc. The better the dataset, the more accurate and efficient conversational results can be obtained.
 
 ➢ PRE-PROCESSING: This step involves cleaning the dataset such as removing unwanted characters (- or – or # or $ etc) and replacing them with blank spaces.
