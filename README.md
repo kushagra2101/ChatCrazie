@@ -4,7 +4,7 @@ A chatbot implemented using RNN and GloVe embeddings whch answers your query cra
 <br>
 To download Glove Embeddings, go to this [LINK](http://nlp.stanford.edu/data/glove.6B.zip) <br>
 
-# PROBLEM STATEMENT 
+## PROBLEM STATEMENT 
 Main problem domain is building a Chatbot, which is capable of generating the best response for any general user query. The “best” reply must contain following attributes:
 
 1.Answers to the user’s question.<br>
@@ -12,7 +12,7 @@ Main problem domain is building a Chatbot, which is capable of generating the be
 3.Able to ask follow-up questions, and <br>
 4.Able to continue the conversation in a realistic manner. <br>In order to achieve this goal, The Chatbot needs to have understanding of the sender’s messages so that it can predict which sort of response will be relevant and it must be correct lexically and grammatically while generating the reply.<br>
 
-# -METHODOLOGY
+## -METHODOLOGY
 ➢ DATA SET ACQUISITION: It is the one of the most important step in designing a chatbot. After lots of research and fine tuning experimentation, we have used gunthercox dataset and also modified it. The dataset contains conversations based on various topics such as emotions, psychology, sports, normal day-to-day conversations etc. The better the dataset, the more accurate and efficient conversational results can be obtained.
 
 ➢ PRE-PROCESSING: This step involves cleaning the dataset such as removing unwanted characters (- or – or # or $ etc) and replacing them with blank spaces.
@@ -29,4 +29,5 @@ the best results with these parameters. We trained and tested our model on NVIDI
 ➢ PREDICTION: Finally the user can input one’s questions and converse with the chatbot. The results obtained are satisfactory according to review analysis.
 
 
-This project was done under the Guidance of [Mr. Shreyans Jain](https://github.com/shreyanse081).<br> Submitted by: [Kushagra Goel](https://github.com/kushagra2101), [Anushree Jain](https://github.com/anushreejain98), [Akshita Gupta](https://github.com/akshitagupta114).
+This project was done under the Guidance of [Mr. Shreyans Jain](https://github.com/shreyanse081).<br> 
+### Submitted by: [Kushagra Goel](https://github.com/kushagra2101), [Anushree Jain](https://github.com/anushreejain98), [Akshita Gupta](https://github.com/akshitagupta114).
