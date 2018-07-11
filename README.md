@@ -44,4 +44,4 @@ input. This is then used by decoder to generate output.
 
 
 
-This project was done under the Guidance of [Mr. Shreyans Jain](https://github.com/shreyanse081) Submitted by: Kushagra Goel(https://github.com/kushagra2101),Anushree Jain(https://github.com/anushreejain98),Akshita Gupta.
+This project was done under the Guidance of [Mr. Shreyans Jain](https://github.com/shreyanse081) Submitted by: Kushagra Goel(https://github.com/kushagra2101),Anushree Jain(https://github.com/anushreejain98), Akshita Gupta(https://github.com/akshitagupta114).
