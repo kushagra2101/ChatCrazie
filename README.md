@@ -1,7 +1,8 @@
 # ChatCrazie
 
-A chatbot implemented using RNN and GloVe embeddings whch answers your query crazily 
-To download Glove Embeddings, go to this LINK 
+A chatbot implemented using RNN and GloVe embeddings whch answers your query crazily
+<br>
+To download Glove Embeddings, go to this [LINK](http://nlp.stanford.edu/data/glove.6B.zip) <br>
 
 # PROBLEM STATEMENT 
 Main problem domain is building a Chatbot, which is capable of generating the best response for any general user query. The “best” reply must contain following attributes:
@@ -22,4 +23,4 @@ Main problem domain is building a Chatbot, which is capable of generating the be
 
 ➢ CREATION OF LSTM, ENCODER AND DECODER MODEL: LSTM are a special kind of RNN which are capable of learning long-term dependencies. Encoder-Decoder model contains two parts- encoder which takes the vector representation of input sequence and maps it to an encoded representation of the input. This is then used by decoder to generate output.
 
-This project was done under the Guidance of Mr. Shreyans Jain Submitted by: Kushagra Goel(https://github.com/kushagra2101),Anushree Jain(https://github.com/anushreejain98), Akshita Gupta(https://github.com/akshitagupta114).
+This project was done under the Guidance of [Mr. Shreyans Jain](https://github.com/shreyanse081).<br> Submitted by: [Kushagra Goel](https://github.com/kushagra2101), [Anushree Jain](https://github.com/anushreejain98), [Akshita Gupta](https://github.com/akshitagupta114).
