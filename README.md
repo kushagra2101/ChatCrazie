@@ -1,5 +1,7 @@
 # ChatCrazie
 
+## Overview
+This is our ChatBot: ChatCraZie on Youtube. It starts with [this](https://youtu.be/0TGp_CrSSxg) video on Youtube.<br>
 A chatbot implemented using RNN and GloVe embeddings whch answers your query crazily
 <br>
 To download Glove Embeddings, go to this [LINK](http://nlp.stanford.edu/data/glove.6B.zip) <br>
