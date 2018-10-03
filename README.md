@@ -43,6 +43,8 @@ the best results with these parameters. We trained and tested our model on NVIDI
 Finally the user can input one’s questions and converse with the chatbot. The results obtained are satisfactory according to review analysis.
 
 
+<img src="https://github.com/kushagra2101/ChatCrazie/blob/master/ChatCrazie%20GUI.jpeg" alt="Chatbot GUI" width="600" height="300">
+
 This project was done under the Guidance of [Mr. Shreyans Jain](https://github.com/shreyanse081).<br> 
 ### Submitted by: [Kushagra Goel](https://github.com/kushagra2101), [Anushree Jain](https://github.com/anushreejain98), [Akshita Gupta](https://github.com/akshitagupta114).
 =======
