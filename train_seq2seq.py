@@ -24,9 +24,9 @@ MAX_INPUT_SEQ_LENGTH = 30
 MAX_TARGET_SEQ_LENGTH = 30
 MAX_VOCAB_SIZE = 10000
 DATA_SET_NAME = 'my_data'
-DATA_DIR_PATH = 'E:/chatbot/ChatCrazie/my_data'
-WEIGHT_FILE_PATH = 'E:/chatbot/ChatCrazie/support files/model-weights.h5'
-GLOVE_MODEL = "E:/chatbot/ChatCrazie/glove.6B." + str(GLOVE_EMBEDDING_SIZE) + "d.txt"
+DATA_DIR_PATH = './my_data'
+WEIGHT_FILE_PATH = './support files/model-weights.h5'
+GLOVE_MODEL = "glove.6B." + str(GLOVE_EMBEDDING_SIZE) + "d.txt"
 WHITELIST = 'abcdefghijklmnopqrstuvwxyz1234567890?.,'
 
 #defines the valid characters for the chatbot
@@ -104,8 +104,8 @@ target_idx2word = dict([(idx, word) for word, idx in target_word2idx.items()])
 
 num_decoder_tokens = len(target_idx2word)
 
-np.save('E:/chatbot/ChatCrazie/support files/target-word2idx.npy', target_word2idx)
-np.save('E:/chatbot/ChatCrazie/support files/target-idx2word.npy', target_idx2word)
+np.save('./support files/target-word2idx.npy', target_word2idx)
+np.save('./support files/target-idx2word.npy', target_idx2word)
 
 input_texts_word2em = []
 
@@ -130,7 +130,7 @@ context['encoder_max_seq_length'] = encoder_max_seq_length
 context['decoder_max_seq_length'] = decoder_max_seq_length
 
 print(context)
-np.save('E:/chatbot/ChatCrazie/support files/word-glove-context.npy', context)
+np.save('./support files/word-glove-context.npy', context)
 
 
 def generate_batch(input_word2em_data, output_text_data):
@@ -170,7 +170,7 @@ decoder_outputs = decoder_dense(decoder_outputs)
 model = Model([encoder_inputs, decoder_inputs], decoder_outputs)
 model.compile(loss='categorical_crossentropy', optimizer='rmsprop',metrics=['accuracy'])
 json = model.to_json()
-open('E:/chatbot/ChatCrazie/support files/word-architecture.json', 'w').write(json)
+open('./support files/word-architecture.json', 'w').write(json)
 
 #train_test split
 Xtrain, Xtest, Ytrain, Ytest = train_test_split(input_texts_word2em, target_texts, test_size=0.2, random_state=42)
