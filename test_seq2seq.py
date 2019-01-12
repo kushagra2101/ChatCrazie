@@ -67,7 +67,7 @@ class ChatBot(object):
         decoder_outputs = decoder_dense(decoder_outputs)
 
         self.model = Model([encoder_inputs, decoder_inputs], decoder_outputs)
-        self.model.load_weights('./support files/word-glove-weights.h5')
+        self.model.load_weights('./support files/word-glove-weights.h5') #self.model.load_weights('support files/model-weights.h5')
         self.model.compile(optimizer='rmsprop', loss='categorical_crossentropy')
 
         self.encoder_model = Model(encoder_inputs, encoder_states)
