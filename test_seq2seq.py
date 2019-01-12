@@ -50,7 +50,7 @@ class ChatBot(object):
             './support files/word-glove-target-word2idx.npy').item()
         self.target_idx2word = np.load(
             './support files/word-glove-target-idx2word.npy').item()
-        context = np.load('E:/chatbot/ChatCrazie/support files/word-glove-context.npy').item()
+        context = np.load('./support files/word-glove-context.npy').item()
         self.max_encoder_seq_length = context['encoder_max_seq_length']
         self.max_decoder_seq_length = context['decoder_max_seq_length']
         self.num_decoder_tokens = context['num_decoder_tokens']
