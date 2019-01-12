@@ -11,7 +11,7 @@ import urllib.request
 HIDDEN_UNITS = 256
 WHITELIST = 'abcdefghijklmnopqrstuvwxyz1234567890?.,'
 GLOVE_EMBEDDING_SIZE = 100
-GLOVE_MODEL = "E:/chatbot/ChatCrazie/glove.6B." + str(GLOVE_EMBEDDING_SIZE) + "d.txt"
+GLOVE_MODEL = "glove.6B." + str(GLOVE_EMBEDDING_SIZE) + "d.txt"
 
 
 def in_white_list(_word):
