@@ -47,9 +47,9 @@ class ChatBot(object):
     def __init__(self):
         self.word2em = load_glove_embeddings()
         self.target_word2idx = np.load(
-            'E:/chatbot/ChatCrazie/support files/word-glove-target-word2idx.npy').item()
+            './support files/word-glove-target-word2idx.npy').item()
         self.target_idx2word = np.load(
-            'E:/chatbot/ChatCrazie/support files/word-glove-target-idx2word.npy').item()
+            './support files/word-glove-target-idx2word.npy').item()
         context = np.load('E:/chatbot/ChatCrazie/support files/word-glove-context.npy').item()
         self.max_encoder_seq_length = context['encoder_max_seq_length']
         self.max_decoder_seq_length = context['decoder_max_seq_length']
@@ -67,7 +67,7 @@ class ChatBot(object):
         decoder_outputs = decoder_dense(decoder_outputs)
 
         self.model = Model([encoder_inputs, decoder_inputs], decoder_outputs)
-        self.model.load_weights('E:/chatbot/ChatCrazie/support files/word-glove-weights.h5')
+        self.model.load_weights('./support files/word-glove-weights.h5')
         self.model.compile(optimizer='rmsprop', loss='categorical_crossentropy')
 
         self.encoder_model = Model(encoder_inputs, encoder_states)
