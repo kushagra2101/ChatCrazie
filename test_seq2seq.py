@@ -67,7 +67,9 @@ class ChatBot(object):
         decoder_outputs = decoder_dense(decoder_outputs)
 
         self.model = Model([encoder_inputs, decoder_inputs], decoder_outputs)
-        self.model.load_weights('E:/chatbot/ChatCrazie/support files/word-glove-weights.h5')
+        # The shape of weight matrix we are trying to load didnt correspond to the shape of the model 
+        # The reason is that the weights you save after training and testing were different.
+        self.model.load_weights('support files/model-weights.h5')
         self.model.compile(optimizer='rmsprop', loss='categorical_crossentropy')
 
         self.encoder_model = Model(encoder_inputs, encoder_states)
